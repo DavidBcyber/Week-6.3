@@ -6,23 +6,22 @@ using System.Threading.Tasks;
 
 namespace _6._3
 {
-    class Book // type of class
+    class Book // The class for the books
     {
-        // public strings and ints
+        // the book details such as title, author, genre, and price
         public string Title { get; set; }
         public string Author { get; set; }
         public string Genre { get; set; }
         public int Price { get; set; }
 
-        public Book(string Title, string Author, string Genre, int Price)
+        public Book(string Title, string Author, string Genre, int Price) // identify for each  deatil and obkect of the class
         {
             this.Title = Title;
             this.Author = Author;
             this.Genre = Genre;
             this.Price = Price;
         }
-        //Display Info
-        public virtual void DisplayInfo()
+        public virtual void DisplayInfo() // The display infomration for each book
         {
             Console.WriteLine($" {Title} -- {Author} -- {Genre} -- {Price} ");
         }
@@ -32,12 +31,12 @@ namespace _6._3
     {
         static void Main(string[] args)
         {
-            //Book Info
-            Book book1 = new Book("The great one", "Jacob N", "Fantasty", 25);
+            //book 1 information display
+            Book book1 = new Book("The great one", "Jacob N", "Fantasy", 25);
             book1.DisplayInfo();
 
-
-            Book book2 = new Book("The one that escape", "Maximize N", "Fiction", 25);
+            //book 2 information display
+            Book book2 = new Book("The one that escaped", "Maximize N", "Fiction", 25);
             book2.DisplayInfo();
         }
 
