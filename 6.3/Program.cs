@@ -31,11 +31,11 @@ namespace _6._3
     {
         static void Main(string[] args)
         {
-            //book 1 information display
+            //book 1 information display of fantasy
             Book book1 = new Book("The great one", "Jacob N", "Fantasy", 25);
             book1.DisplayInfo();
 
-            //book 2 information display
+            //book 2 information display of fiction
             Book book2 = new Book("The one that escaped", "Maximize N", "Fiction", 25);
             book2.DisplayInfo();
         }
